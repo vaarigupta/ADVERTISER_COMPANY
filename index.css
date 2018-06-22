@@ -16,6 +16,9 @@
  {
   width: 500px;
  }
+ .topnav-right {
+  float: right;
+}
 
  /* not in use */
  
