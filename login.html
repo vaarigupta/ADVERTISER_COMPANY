@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="body1">
+	<nav class="navbar navbar-expand-md back navbar-light">
+  <a class="navbar-brand" href="#">Dishathon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ">
+      
+       <!-- Dropdown -->
+    <li class="nav-item ">
+      <div class="btn-group">
+      <button type="button" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Sector</button>
+      <ul class="dropdown-menu">
+        
+        <li class="dropdown-item" ><a href="#">Dth</a></li>
+        <li class="dropdown-item"><a  href="#">Telecom</a></li>
+        <li class="dropdown-item"><a  href="#">Technical</a></li>
+        <li class="dropdown-item"><a href="#">Sports</a></li>
+        <li class="dropdown-item"><a  href="#">Automobiles</a></li>
+        <li class="dropdown-item"><a  href="#">Entertainment</a></li>
+        <li class="dropdown-item"><a  href="#">Art and Craft</a></li>
+        <li class="dropdown-item"><a  href="#">Fabric</a></li>
+        <li class="dropdown-item"><a  href="#">Kids</a></li>
+        <li class="dropdown-item"><a  href="#">Media</a></li> 
+         <li class="dropdown-item"><a href="#">Marketing</a></li> 
+         <li class="dropdown-item"><a  href="#">E-commerce</a></li>  
+         <li class="dropdown-item"><a  href="#">social Work</a></li>
+      </ul>
+      </div>
+    </li> 
+    </ul>
+  </div>  
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-danger" type="submit">Search</button>
+  </form>
+</nav>
+<div class="card" id="card1">
+  <div class="card-body" >
+    <h2 class="card-title text-center">Login</h2>
+             <div >
+              <label for="Form-email">Enter your Email</label>
+                <input type="text" id="Form-email" placeholder="xyz@gmail.com" class="form-control">
+                
+            </div>
+            <div>
+              <label for="Form-pass">Enter your password</label>
+                <input type="password" id="Form-pass"  class="form-control">
+                </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+
+  </div>
+</div>
+
 
 </body>
 </html>
