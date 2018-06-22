@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Dishathon</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -9,53 +10,65 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="body1">
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md back navbar-light">
   <a class="navbar-brand" href="#">Dishathon</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ">
+    
       <li class="nav-item">
-        <a class="nav-link" href="#"><button>Login In</button></a>
+        <a class="nav-link" href="#"><button class="btn btn-danger">Login In</button></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><button>Register</button></a>
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Register</button>
+          <ul class="dropdown-menu">
+            <li><a  class="dropdown-item" href="#"> New Company</a></li>
+            <li><a class="dropdown-item" href="#">New Advertiser</a></li>
+          </ul>
+          
+        </div>
       </li> 
+      
        <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Sector                                                                 
-      </a>
-      <div class="dropdown-menu">
+    <li class="nav-item ">
+      <div class="btn-group">
+      <button type="button" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Sector</button>
+      <ul class="dropdown-menu">
         
-        <a class="dropdown-item" href="#">Dth</a>
-        <a class="dropdown-item" href="#">Telecom</a>
-        <a class="dropdown-item" href="#">Technical</a>
-        <a class="dropdown-item" href="#">Sports</a>
-        <a class="dropdown-item" href="#">Automobiles</a>
-        <a class="dropdown-item" href="#">Entertainment</a>
-        <a class="dropdown-item" href="#">Art and Craft</a>
-        <a class="dropdown-item" href="#">Fabric</a>
-        <a class="dropdown-item" href="#">Kids</a>
-         <a class="dropdown-item" href="#">Media</a>
-          <a class="dropdown-item" href="#">Marketing</a>
-           <a class="dropdown-item" href="#">E-commerce</a>
-            <a class="dropdown-item" href="#">social Work</a>
+        <li class="dropdown-item" ><a href="#">Dth</a></li>
+        <li class="dropdown-item"><a  href="#">Telecom</a></li>
+        <li class="dropdown-item"><a  href="#">Technical</a></li>
+        <li class="dropdown-item"><a href="#">Sports</a></li>
+        <li class="dropdown-item"><a  href="#">Automobiles</a></li>
+        <li class="dropdown-item"><a  href="#">Entertainment</a></li>
+        <li class="dropdown-item"><a  href="#">Art and Craft</a></li>
+        <li class="dropdown-item"><a  href="#">Fabric</a></li>
+        <li class="dropdown-item"><a  href="#">Kids</a></li>
+        <li class="dropdown-item"><a  href="#">Media</a></li> 
+         <li class="dropdown-item"><a href="#">Marketing</a></li> 
+         <li class="dropdown-item"><a  href="#">E-commerce</a></li>  
+         <li class="dropdown-item"><a  href="#">social Work</a></li>
+      </ul>
       </div>
     </li> 
     </ul>
   </div>  
   <form class="form-inline" action="/action_page.php">
     <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-success" type="submit">Search</button>
+    <button class="btn btn-danger" type="submit">Search</button>
   </form>
 </nav>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
+
+<div class="container">
+  
   <h3>Advertisers in popular Categories</h3>
+  
+<div >
   <div class="card-columns">
     <div class="card bg-light">
       <img class="card-img-top" src="img/dth.jpg" alt="dth" >
@@ -92,56 +105,56 @@
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-    <div class="card bg-light">
+    <div class="card ">
       <img class="card-img-top" src="img/ent.jpg" alt="Entertainment" >
     <div class="card-body">
       <h4 class="card-title">Entertainment</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card">
       <img class="card-img-top" src="img/art.jpg" alt="ART" >
     <div class="card-body">
       <h4 class="card-title">Art and Craft</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card ">
       <img class="card-img-top" src="img/fab.jpg" alt="Fabric" >
     <div class="card-body">
       <h4 class="card-title">Fabric</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card">
       <img class="card-img-top" src="img/kids.jpg" alt="Kids" >
     <div class="card-body">
       <h4 class="card-title">Kids</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card ">
       <img class="card-img-top" src="img/media.jpg" alt="Media" >
     <div class="card-body">
       <h4 class="card-title">Media</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card">
       <img class="card-img-top" src="img/mar.jpg" alt="Marketing" >
     <div class="card-body">
       <h4 class="card-title">Marketing</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card ">
       <img class="card-img-top" src="img/ecom.jpg" alt="E-commerce" >
     <div class="card-body">
       <h4 class="card-title">E-commerce</h4>
       <a href="#" class="btn btn-dark">Go</a>
     </div>
     </div>
-     <div class="card bg-light">
+     <div class="card ">
       <img class="card-img-top" src="img/soc.jpg" alt="social Work" >
     <div class="card-body">
       <h4 class="card-title">social Work</h4>
@@ -149,10 +162,8 @@
     </div>
     </div>
   </div>
-  
 </div>
-</div>
-
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 

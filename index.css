@@ -1,0 +1,18 @@
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+ .body1
+ {
+ 	background-color: #ffcc99;
+ }
+
+ .back
+ {
+ 	background-color: #ff9933;
+ }
+ 
+ .[class=card]
+ {
+ 	background-color: red;
+ }
